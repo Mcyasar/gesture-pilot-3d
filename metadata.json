@@ -1,0 +1,7 @@
+{
+  "name": "Gesture Pilot 3D",
+  "description": "Fly a plane using hand gestures! Make a fist with your thumb out (Thumbs Up). Rotate your hand left or right to steer the plane.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

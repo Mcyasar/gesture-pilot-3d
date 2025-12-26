@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+![alt text](image.png)
 
-# Run and deploy your AI Studio app
+![alt text](image-1.png)
 
-This contains everything you need to run your app locally.
+![alt text](image-pause.png)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1K7vilWgdXrMu_8l7uKwKKXUClFzzd7KV
+Gesture Pilot 3D game was developed by Gemini 3 Pro, via aistudio.google.com.
+All implementation has been done with prompts.
 
-## Run Locally
+The menu buttons are clicked with a gun gesture. The thumb finger should be opened then closed. Sign figner is used as cursor.
 
-**Prerequisites:**  Node.js
+In the game, to move the plane, the hand gesture should be fist. When the fist is moved to the left or to the right, the plane is moved accordingly. If thumb is opened, firing is cancelled, so, to fire, the thumb finger should be closed and even it should be hidden in the palm.
 
+While playing, to open pause menu, stop hand gesture (the opened palm gesture) should be shown.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+All corresponding gestures are also shown in the game menu displays.
+
+There are red obstacles and cone shaped enemies. Some enemies can fire. After hitting obstacles and enemies, health bonus is dropped into the game scene randomly.
+
+This is a just simple demo game that is fully played via hand gestures and all design details, implementations were done by Gemini.
+
+To handle hand gestures, the mediapipe/tasks-vision library was used by Gemini.
+
+Gemini also used react-zustand to handle game states.
+
+As it can be seen, to create 3D js objects and interactions, three.js is being used. To make react app more optimized for 3D interactions, React Three Fiber (R3F) library is also used. Three.js simplifies the create 3D js implementation and at the background it uses WebGL.

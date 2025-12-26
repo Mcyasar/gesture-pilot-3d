@@ -1,7 +1,5 @@
 ![alt text](image.png)
 
-![alt text](image-1.png)
-
 ![alt text](image-pause.png)
 
 Gesture Pilot 3D game was developed by Gemini 3 Pro, via aistudio.google.com.
